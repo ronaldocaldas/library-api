@@ -43,7 +43,7 @@ public class BookControllerTest {
 		
 		mvc.perform(request).andExpect(status().isCreated() )
 			.andExpect(jsonPath("id").isNotEmpty())
-			.andExpect(jsonPath("title").value("My book title"))
+			.andExpect(jsonPath("title").value("My book"))
 			.andExpect(jsonPath("author").value("Author"))
 			.andExpect(jsonPath("isbn").value("12345"));
 		
